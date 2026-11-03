@@ -1,0 +1,2 @@
+case_name,mean_dice,mean_ellipse_dice,mean_centroid_error,mean_contact_rel_error,mean_relative_residual,final_mesh_elems,runtime_sec
+rob_partial_8,0.483513461417517,0.41887410527443,0.230229732304858,0.248938504251321,0.0709337594222524,64,387.2960703

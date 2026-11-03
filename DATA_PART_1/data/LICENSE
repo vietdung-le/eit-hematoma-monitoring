@@ -1,0 +1,20 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+SPDX-License-Identifier: CC-BY-4.0
+
+Copyright (c) 2026 Viet-Dung Le, Huu-Loc Tran, and Trong-Tu Bui,
+for original synthetic research data to the extent each author holds the relevant rights.
+
+The authors' original numerical data, derived CSV/MAT results, and data documentation
+in the data/ directory are licensed under the Creative Commons Attribution 4.0
+International License. The terms are available at:
+  https://creativecommons.org/licenses/by/4.0/
+  https://creativecommons.org/licenses/by/4.0/legalcode
+
+Reusers must give appropriate credit, link to the license, and indicate if
+changes were made. No additional restrictions may be imposed on reuse covered
+by this license. This statement does not grant rights to third-party materials,
+MATLAB, EIDORS, or the original MATLAB code under code/ or scripts/.
+
+Associated study: A Shape-, Growth-, and Shift-Aware EIT Framework for
+Intracranial Hematoma Monitoring (ISAS 2026).
+Citation details: ../CITATION.cff

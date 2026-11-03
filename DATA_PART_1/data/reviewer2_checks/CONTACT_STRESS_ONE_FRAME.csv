@@ -1,0 +1,4 @@
+contact_factor,source_frame,truth_exceeds_reconstruction_bounds,initial_contact_error,estimated_contact_error,initial_unweighted_rel_residual,final_unweighted_rel_residual,contact_attempts,contact_accepted,electrodes_at_bounds,runtime_sec
+2,6,0,0.5,0.5,0.00226686254740536,0.00226686254740536,0,0,0,0.1174919
+5,6,0,0.8,0.8,0.00220098250678838,0.00220098250678838,0,0,0,0.0407944
+10,6,1,0.9,0.9,0.00278868048926924,0.00278868048926924,0,0,0,0.0431675
