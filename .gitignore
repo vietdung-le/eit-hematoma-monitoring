@@ -1,0 +1,27 @@
+# MATLAB local sessions and generated outputs
+*.asv
+*.m~
+*.autosave
+*.mlx.autosave
+*.mex*
+/code/results/
+/code/results_review24h/
+/code/results_compare_baselines/
+/code/paper_figures/
+/code/results_*/
+# TeX build products (keep the manuscript PDF tracked intentionally)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+# Environment/editor files
+.DS_Store
+Thumbs.db
+__pycache__/
+.idea/
+.vscode/
+.matlab/
+*.pyc

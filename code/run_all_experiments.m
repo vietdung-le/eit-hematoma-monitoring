@@ -1,0 +1,37 @@
+function summary = run_all_experiments
+%RUN_ALL_EXPERIMENTS Run revised single-seed suites.
+
+% Bootstrap project paths so this entry point works from a clean MATLAB session.
+root_dir = fileparts(mfilename('fullpath'));
+addpath(root_dir, '-begin');
+addpath(fullfile(root_dir, 'config'), '-begin');
+addpath(fullfile(root_dir, 'src'), '-begin');
+
+cfg = q1_config();
+setup_paths(cfg);
+rng(cfg.random_seed, 'twister');
+
+cases_demo = build_experiment_suite(cfg, "demo");
+cases_ablation = build_experiment_suite(cfg, "ablation");
+cases_robustness = build_experiment_suite(cfg, "robustness");
+cases_growth = build_experiment_suite(cfg, "growth");
+cases_shift_prior = build_experiment_suite(cfg, "shift_prior");
+
+cases = [
+    cases_demo(:);
+    cases_ablation(:);
+    cases_robustness(:);
+    cases_growth(:);
+    cases_shift_prior(:)
+];
+
+outs = cell(numel(cases),1);
+for i = 1:numel(cases)
+    fprintf('\n[%d/%d] Running case: %s\n', i, numel(cases), cases(i).name);
+    outs{i} = run_single_experiment(cases(i), cfg);
+    save_results_bundle(outs{i}, cases(i), cfg);
+end
+
+summary = export_case_summaries(outs, cases, cfg);
+plot_experiment_summary(summary, cfg);
+end

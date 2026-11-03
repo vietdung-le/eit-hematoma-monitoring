@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this numerical code/data archive. Cite the associated proceedings article separately once its publication details are available."
+type: software
+title: "A Shape-, Growth-, and Shift-Aware EIT Framework for Intracranial Hematoma Monitoring"
+authors:
+  - family-names: Le
+    given-names: Viet-Dung
+  - family-names: Tran
+    given-names: Huu-Loc
+  - family-names: Bui
+    given-names: Trong-Tu
+keywords:
+  - electrical impedance tomography
+  - hematoma monitoring
+  - numerical simulation
+  - MATLAB
+  - EIDORS
