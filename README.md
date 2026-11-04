@@ -107,15 +107,21 @@ files via GitHub Desktop.
 
 ## Attribution and public release
 
-The published paper's final citation, GitHub URL and Zenodo DOI are not
-known to this bundle; none have been invented. `CITATION.cff` includes
-author names and an appropriate software title but no fabricated DOI.
-Original synthetic research data and author-written documentation are
-licensed under **CC BY 4.0 International**, as scoped in the repository-root
-[`LICENSE`](LICENSE) and [`docs/LICENSE_AND_ATTRIBUTION.md`](docs/LICENSE_AND_ATTRIBUTION.md).
-Please cite the listed authors and indicate changes when reusing the data.
-**Software source in `code/` and `scripts/` is not covered by CC BY 4.0**;
-a software license remains to be approved by the rights holders. MATLAB and
-EIDORS remain external dependencies. The manuscript (Word, LaTeX and PDF),
+Public code/data repository: https://github.com/vietdung-le/eit-hematoma-monitoring
+
+`CITATION.cff` identifies the authors and software title. The final proceedings
+citation and a dataset DOI are not supplied; neither is invented here.
+Author-owned MATLAB source under `code/` and `scripts/` is made available
+under the **MIT License** selected in the repository-root [`LICENSE`](LICENSE),
+subject to confirmation that the authors hold the necessary software rights.
+Original synthetic datasets under `data/` are released under **CC BY 4.0**;
+the dataset license is at [`data/LICENSE`](data/LICENSE). Author-written
+reproducibility documentation is CC BY 4.0 as detailed in
+[`docs/LICENSE_AND_ATTRIBUTION.md`](docs/LICENSE_AND_ATTRIBUTION.md).
+Neither the MIT nor the CC BY 4.0 grant changes the independent licenses of
+MATLAB, EIDORS or any other third-party components. The authors should
+confirm source ownership before treating the repository as a fully licensed
+public release.
+The manuscript (Word, LaTeX and PDF),
 paper figures and peer-review response are intentionally excluded from this
 public repository and remain in the separate submission package.
