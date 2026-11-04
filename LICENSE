@@ -1,48 +1,21 @@
-Creative Commons Attribution 4.0 International (CC BY 4.0)
-SPDX-License-Identifier: CC-BY-4.0
+MIT License
 
-LICENSE SCOPE
+Copyright (c) 2026 Viet-Dung Le, Huu-Loc Tran, and Trong-Tu Bui
 
-The authors' original synthetic research datasets, CSV/MAT numerical records,
-and author-created dataset documentation in this repository are made available
-under the Creative Commons Attribution 4.0 International License (CC BY 4.0),
-subject to the authors holding the rights needed to license those materials.
-This grant applies to author-owned material under:
-  - data/    (numerical research datasets and audit tables)
-  - docs/    (author-written dataset and reproducibility documentation)
-  - README.md and data descriptions in this repository
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Attribution for the licensed materials:
-  Viet-Dung Le; Huu-Loc Tran; Trong-Tu Bui (2026)
-  A Shape-, Growth-, and Shift-Aware EIT Framework for Intracranial
-  Hematoma Monitoring (ISAS 2026 numerical code/data archive).
-  See CITATION.cff for names and the recommended citation.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Official human-readable license summary:
-  https://creativecommons.org/licenses/by/4.0/
-Full legal text (the legally controlling terms):
-  https://creativecommons.org/licenses/by/4.0/legalcode
-Official plain-text legal code:
-  https://creativecommons.org/licenses/by/4.0/legalcode.txt
-
-Under CC BY 4.0, licensees must provide appropriate attribution, reference
-this license, and indicate whether licensed material was modified. The license
-permits reuse, sharing and adaptation, including for commercial purposes.
-There are no restrictions to non-commercial research only.
-
-EXCLUDED MATERIAL AND THIRD-PARTY RIGHTS
-
-This CC BY 4.0 notice does NOT license:
-  - software source files in code/ or scripts/ (software licensing is pending);
-  - MATLAB, EIDORS and other third-party programs and dependencies;
-  - files explicitly identified as third-party works or carrying separate
-    rights, if any. Rights can only be granted by their lawful owners.
-
-Publishing the source code for inspection does not, by itself, authorize
-others to modify or redistribute it. The authors should approve a software
-license separately (for example, MIT) after confirming code ownership and
-compatibility with third-party obligations. No such approval is assumed here.
-
-This notice is intended to apply CC BY 4.0 to the above-listed author-owned
-research data and documentation only. Check contributor/organization rights
-and remove any third-party materials that cannot be licensed before release.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
