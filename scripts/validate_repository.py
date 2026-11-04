@@ -11,7 +11,7 @@ ERRORS=[]
 def check(ok,msg):
     if not ok: ERRORS.append(msg)
 
-for rel in ['README.md','LICENSE','docs/LICENSE_AND_ATTRIBUTION.md','CITATION.cff','.gitignore','docs/DATA_DICTIONARY.md',
+for rel in ['README.md','LICENSE','data/LICENSE','docs/LICENSE_AND_ATTRIBUTION.md','CITATION.cff','.gitignore','docs/DATA_DICTIONARY.md',
     'code/run_review_24h.m','code/run_review_forward_resolution.m',
     'code/run_revision5_validation.m',
     'code/run_review2_priority.m','code/r2_reconstruct_sequence_logged.m','code/config/q1_config.m',
@@ -23,13 +23,15 @@ for rel in ['README.md','LICENSE','docs/LICENSE_AND_ATTRIBUTION.md','CITATION.cf
 
 # The accepted title is consistent in the README and the software citation.
 TITLE='A Shape-, Growth-, and Shift-Aware EIT Framework for Intracranial Hematoma Monitoring'
-check('CC-BY-4.0' in (ROOT/'LICENSE').read_text(encoding='utf-8'),'data/docs CC BY 4.0 notice not found')
+check('Permission is hereby granted' in (ROOT/'LICENSE').read_text(encoding='utf-8') if (ROOT/'LICENSE').is_file() else False, 'root MIT code license missing or unexpected')
+check('CC-BY-4.0' in (ROOT/'data/LICENSE').read_text(encoding='utf-8') if (ROOT/'data/LICENSE').is_file() else False, 'data/LICENSE CC BY 4.0 notice not found')
 check(TITLE in (ROOT/'README.md').read_text(encoding='utf-8'),'manuscript title not found in README')
 check(('title: "'+TITLE+'"') in (ROOT/'CITATION.cff').read_text(encoding='utf-8'),'citation title differs from accepted manuscript title')
 
 with (ROOT/'data/FILE_MANIFEST.csv').open(encoding='utf-8',newline='') as f:
     index=list(csv.DictReader(f))
 expected={r['relative_path'] for r in index}
+check(len(expected)==len(index), 'duplicate relative_path values in FILE_MANIFEST.csv')
 seen=set()
 for r in index:
     name=r['relative_path'];p=ROOT/name
@@ -39,8 +41,9 @@ for r in index:
     check(hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256'],'sha mismatch '+name)
     seen.add(name)
 actual={p.relative_to(ROOT).as_posix() for p in (ROOT/'data').rglob('*')
-        if p.is_file() and p.name!='FILE_MANIFEST.csv'}
+        if p.is_file() and p.name not in ('FILE_MANIFEST.csv','LICENSE')}
 check(actual==seen,'unexpected or unindexed data files: '+str(actual.symmetric_difference(seen)))
+check(len(index)==212,'expected 212 checksummed research data files, not '+str(len(index)))
 
 with (ROOT/'data/reviewer_checks/runs.csv').open(encoding='utf-8-sig',newline='') as f:
     rows=list(csv.DictReader(f))
