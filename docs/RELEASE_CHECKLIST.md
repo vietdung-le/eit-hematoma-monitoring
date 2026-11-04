@@ -1,13 +1,24 @@
-# Final GitHub release checklist (2026-11-04)
+# GitHub Release Checklist — 2026-11-04
 
-- [x] Offline data archive: 212 SHA-256-indexed research files in 4 upload ZIPs; 126 saved run records.
-- [x] Public GitHub address supplied by the authors: https://github.com/vietdung-le/eit-hematoma-monitoring
-- [x] Distinct licensing structure selected: root MIT for eligible original code; `data/LICENSE` CC BY 4.0 for original datasets (rights clearance still required).
-- [ ] Confirm that a non-logged-in browser can read the online `README.md`, `code/run_review_24h.m`, `data/FILE_MANIFEST.csv`, `data/LICENSE` and a sample `.mat` file.
-- [ ] Overwrite only the modified README/docs/validator files included in the GitHub patch ZIP. **Do not overwrite the existing MIT root `LICENSE`.**
-- [ ] Clone the GitHub repository and execute `python scripts/validate_repository.py`; confirm `PASS` without MATLAB.
-- [ ] Run a fresh MATLAB R2025b + EIDORS 3.12 preflight and one representative case. Compare scientific values, not merely exit status.
-- [ ] Obtain contributor/organisation permission for open licensing where necessary, and exclude separately licensed third-party sources.
-- [ ] Test regeneration of manuscript figures separately (the repository does not claim a fully automated end-to-end figure pipeline).
-- [ ] Confirm final manuscript/reviewer response hyperlink uses the GitHub URL above.
-- [ ] Tag and publish a GitHub Release after inspection. Do not claim a Zenodo DOI until minted.
+## Completed
+
+- [x] Public repository created: https://github.com/vietdung-le/eit-hematoma-monitoring
+- [x] MATLAB code and simulation data uploaded.
+- [x] The three DATA_PART directories merged into the root `data/` directory.
+- [x] GitHub Actions repair workflow completed successfully.
+- [x] 212 research data files passed offline SHA-256 verification.
+- [x] 126 run records retained.
+- [x] Forward-resolution datasets for 256, 576, and 1024 elements retained.
+- [x] Root MIT license and dataset-specific CC BY 4.0 license present.
+- [x] `scripts/validate_repository.py` returned PASS on the downloaded GitHub ZIP.
+
+## Remaining tasks
+
+- [ ] Verify representative public files using a browser session without signing in.
+- [ ] Independently run MATLAB R2025b/EIDORS 3.12 and compare archived numerical outputs.
+- [ ] Confirm ownership and third-party licensing obligations.
+- [ ] Check figure regeneration and manuscript-to-data traceability.
+- [ ] Confirm the manuscript and reviewer response contain the correct repository link.
+- [ ] Create a versioned GitHub Release, such as `v1.0.0`, after final inspection.
+
+The integrity-check PASS does not establish independent MATLAB reproducibility or clinical validation.
