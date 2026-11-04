@@ -1,18 +1,20 @@
-# Public release readiness (as checked on 2026-11-03)
+# GitHub code/data release status (author-reported upload, 2026-11-04)
 
-## Checked in the archive
-- File extraction and SHA-256 checks pass for every included numerical data file.
-- There are 50 paired one-frame configurations and 24 growth-case MAT outputs.
-- The saved reviewer run log reports 126 `OK` rows (successful jobs, not successful inference).
-- The forward-only resolution table includes 256, 576 and 1,024 triangles.
-- The original publication title and the three authors agree in the README and CITATION.cff.
-- The code/data archive excludes the manuscript and reviewer response by design.
+Public repository URL provided by the corresponding author:
+https://github.com/vietdung-le/eit-hematoma-monitoring
 
-## Still required before making the GitHub repository public
-- Confirm all authors' permission to distribute the original MATLAB code and datasets.
-- Select and add a real, appropriate distribution license. No license was assigned in this archive.
-- Publish the unpacked repository; then verify its GitHub URL in a private browser session.
-- Run the MATLAB/EIDORS scripts on a clean system and compare regenerated outputs before claiming full reproduction.
-- Add a Zenodo DOI only once a real release has been deposited.
+## Confirmed by offline ZIP audit
+- Four browser upload batches contain 282 nonoverlapping files.
+- The `data/` batches contain 212 checksum-indexed research files plus `FILE_MANIFEST.csv` and `data/LICENSE` (CC BY 4.0).
+- The `scripts/validate_repository.py` implementation is updated for the root MIT software license and data-specific CC BY 4.0 license.
+- The 126 saved run log records, 100 one-frame geometry arm files, 24 growth arm files, and the 256/576/1024 forward-resolution rows can be inspected offline.
+- Published numerical outputs include known estimator failures; they are not evidence of clinical validity or of mesh convergence.
 
-This ZIP contains no invented URL, DOI or claim of completed independent numerical replay.
+## Still outstanding before claiming a verified public, reproducible release
+- Open the repository in a private/incognito browser session and inspect representative `code/` and `data/` files.
+- Update the repository with the files in the accompanying GitHub patch ZIP and run the Python checker on a clean checkout.
+- Confirm the root `LICENSE` is MIT and `data/LICENSE` is CC BY 4.0; confirm authors' rights for both.
+- Run MATLAB R2025b/EIDORS 3.12 on a clean system and compare regeneration against archived MAT/CSV datasets.
+- Create a versioned GitHub Release after the upload and checkout are verified. No DOI is asserted here.
+
+The online repository content was not independently accessible from the audit environment at preparation time. This report is not a certification of a complete public upload.

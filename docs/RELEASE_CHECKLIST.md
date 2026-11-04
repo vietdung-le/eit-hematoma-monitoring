@@ -1,20 +1,13 @@
-# Before making a public GitHub release
+# Final GitHub release checklist (2026-11-04)
 
-- [ ] Confirm authors' ownership and permission to distribute all code,
-  derived numerical data and supporting scripts. The paper and figures
-  are in a separate author package, not this public repository.
-- [ ] Select an appropriate code/data license and add an approved LICENSE.
-- [ ] Set a repository URL and insert it only when it is live; do not
-  invent a Zenodo DOI.
-- [ ] Install MATLAB R2025b + EIDORS 3.12 on a clean system and run
-  code/setup checks and at least one reviewer pilot.
-- [ ] Compare the archived 50 geometry pairs, 24 growth arms and ten-seed
-  matched-model results against reproducible outputs.
-- [x] Verify all three claimed forward-only mesh resolutions have CSV rows: 256, 576 and 1,024. This does not establish convergence.
-- [ ] Verify manuscript figures separately against archived analysis
-  data; record any missing figure-regeneration script.
-- [ ] Keep the response-to-reviewers and author-only Word files out of
-  the public repository unless explicitly cleared for disclosure.
-- [ ] Verify GitHub upload was extracted and source files are visible (not only one ZIP).
-- [ ] Publish an immutable release only after checking the archive in a
-  clean checkout; then mint and reference a Zenodo DOI if appropriate.
+- [x] Offline data archive: 212 SHA-256-indexed research files in 4 upload ZIPs; 126 saved run records.
+- [x] Public GitHub address supplied by the authors: https://github.com/vietdung-le/eit-hematoma-monitoring
+- [x] Distinct licensing structure selected: root MIT for eligible original code; `data/LICENSE` CC BY 4.0 for original datasets (rights clearance still required).
+- [ ] Confirm that a non-logged-in browser can read the online `README.md`, `code/run_review_24h.m`, `data/FILE_MANIFEST.csv`, `data/LICENSE` and a sample `.mat` file.
+- [ ] Overwrite only the modified README/docs/validator files included in the GitHub patch ZIP. **Do not overwrite the existing MIT root `LICENSE`.**
+- [ ] Clone the GitHub repository and execute `python scripts/validate_repository.py`; confirm `PASS` without MATLAB.
+- [ ] Run a fresh MATLAB R2025b + EIDORS 3.12 preflight and one representative case. Compare scientific values, not merely exit status.
+- [ ] Obtain contributor/organisation permission for open licensing where necessary, and exclude separately licensed third-party sources.
+- [ ] Test regeneration of manuscript figures separately (the repository does not claim a fully automated end-to-end figure pipeline).
+- [ ] Confirm final manuscript/reviewer response hyperlink uses the GitHub URL above.
+- [ ] Tag and publish a GitHub Release after inspection. Do not claim a Zenodo DOI until minted.

@@ -4,7 +4,7 @@
 
 The original synthetic research data and author-written documentation are
 licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
-The repository-root [`LICENSE`](../LICENSE) states the precise scope.
+The data-specific [`data/LICENSE`](../data/LICENSE) defines the scope for datasets. The GitHub repository-root [`LICENSE`](../LICENSE) is the separately selected MIT software license.
 
 - License: https://creativecommons.org/licenses/by/4.0/
 - Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
@@ -15,18 +15,18 @@ The repository-root [`LICENSE`](../LICENSE) states the precise scope.
 CC BY 4.0 permits both academic and commercial reuse, with attribution.
 It is not a noncommercial-only or no-derivatives license.
 
-## MATLAB software: no license selected
+## MATLAB software: MIT (if author-owned)
 
-**CC BY 4.0 does not apply to code/ or scripts/**. A separate software
-license is still required if other people are to receive explicit rights
-to reuse, modify or redistribute the MATLAB source. The authors should
-confirm copyright ownership and any incorporated external material before
-choosing such a license. MATLAB and EIDORS are external dependencies and
-are not covered by this archive's license.
+The repository-root `LICENSE` is the **MIT License**, intended for author-owned
+software in `code/` and `scripts/`. CC BY 4.0 is **not** the code license.
+The authors must verify rights to all included code before granting this
+software license. MATLAB and EIDORS are external dependencies and are
+not licensed by this repository.
 
 ## Pre-publication check
 
 The authors should confirm that all listed rights holders have authorised
 sharing the data and documentation, and that no included material is owned
-by a third party without permission. A local ZIP is not yet a public URL
-or a citable release DOI.
+by a third party without permission. The authors have supplied the public
+repository address https://github.com/vietdung-le/eit-hematoma-monitoring; this alone does not
+provide an immutable, DOI-bearing release or prove end-to-end reproducibility.
