@@ -31,4 +31,4 @@ independently validating the forward-mesh experiments or reconstructing
 the paper figures from raw data. Do not infer successful numeric replay
 from successful Python integrity checks. Paper LaTeX is distributed separately.
 
-**Licensing:** `LICENSE` grants CC BY 4.0 to author-owned data/docs only. Source code in `code/` and `scripts/` has no separate reuse license at this stage.
+**Licensing:** The repository-root `LICENSE` is the MIT License for author-owned code in `code/` and `scripts/`, subject to rights clearance. The dataset-specific `data/LICENSE` grants CC BY 4.0 to author-owned numerical data. Neither covers MATLAB/EIDORS dependencies.
